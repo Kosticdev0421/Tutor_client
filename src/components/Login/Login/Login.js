@@ -12,12 +12,14 @@ const LogIn = () => {
     const passwordRef = useRef();
     const [error, setError] = useState();
     const [currentUser, setCurrentUser] = useContext(userContext);
+    const [loading, setLoading] = useState(false);
 
     let history = useHistory();
     let location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
 
     function handleLogIn(e) {
+        setLoading(true);
         e.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
@@ -84,7 +86,11 @@ const LogIn = () => {
                 setError(errorMessage);
             });
     }
-
+    if(loading){
+        return (
+            <h1>Processing Your Request...</h1>
+        )
+    }
     return (
         <div className="log-in">
             <LogInForm />
