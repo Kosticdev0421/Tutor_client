@@ -1,0 +1,8 @@
+.course{
+    height: 500px;
+}
+.course img{
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}

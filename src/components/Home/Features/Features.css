@@ -1,0 +1,19 @@
+.feature{
+    height: 250px;
+    text-align: center;
+}
+.feature:nth-child(2n){
+    margin-top: 80px;
+}
+.feature-icon{
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: 6px double #404083;
+    margin-bottom: 20px;
+    color: #404083;
+}

@@ -1,0 +1,10 @@
+.sidebar{
+    background-color: ghostwhite;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .sidebar{
+        max-height: 100px!important;
+    }
+}
