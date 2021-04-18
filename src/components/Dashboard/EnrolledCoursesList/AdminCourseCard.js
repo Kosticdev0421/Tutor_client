@@ -26,7 +26,7 @@ const AdminCourseCard = ({ enrolledCourse }) => {
                 enrollId: enrolledCourse._id,
                 status: e.target.value,
             };
-            fetch(`http://localhost:5000/changeEnrollStatus`, {
+            fetch(`https://pro-tutors.herokuapp.com/changeEnrollStatus`, {
                 method: "PUT",
                 headers: {
                     "x-access-token": localStorage.getItem("ptToken"),

@@ -29,7 +29,7 @@ const AddReview = () => {
             img: currentUser.photoURL,
             addedTime: new Date(),
         };
-        fetch(`http://localhost:5000/addReview`, {
+        fetch(`https://pro-tutors.herokuapp.com/addReview`, {
             method: "POST",
             headers: {
                 'content-type': 'application/json',

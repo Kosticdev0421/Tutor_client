@@ -6,7 +6,7 @@ const EnrolledCoursesList = () => {
     const [enrolledCourses, setEnrolledCourses] = useState([]);
     const [currentUser, setCurrentUser] = useContext(userContext);
     useEffect(() => {
-        fetch(`http://localhost:5000/enrolledCourses`, {
+        fetch(`https://pro-tutors.herokuapp.com/enrolledCourses`, {
             headers: {
                 "x-access-token": localStorage.getItem("ptToken"),
             },

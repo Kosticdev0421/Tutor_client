@@ -6,7 +6,7 @@ const ChooseCourse = () => {
     const [courses, setCourses] = useState([]);
     const history = useHistory();
     useEffect(() => {
-        fetch(`http://localhost:5000/courses`)
+        fetch(`https://pro-tutors.herokuapp.com/courses`)
             .then((res) => res.json())
             .then((data) => {
                 setCourses(data);

@@ -29,7 +29,7 @@ const LogIn = () => {
                 // console.log(user);
                 const newUser = { displayName: user.displayName, email: user.email, uid: user.uid };
                 setCurrentUser(newUser);
-                fetch("http://localhost:5000/users", {
+                fetch("https://pro-tutors.herokuapp.com/users", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json",
@@ -63,7 +63,7 @@ const LogIn = () => {
                     photoURL: user.photoURL,
                 };
                 setCurrentUser(newUser);
-                fetch("http://localhost:5000/users", {
+                fetch("https://pro-tutors.herokuapp.com/users", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json",

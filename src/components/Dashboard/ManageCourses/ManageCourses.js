@@ -9,7 +9,7 @@ const ManageCourses = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/courses`)
+        fetch(`https://pro-tutors.herokuapp.com/courses`)
             .then((res) => res.json())
             .then((data) => {
                 setCourses(data);
@@ -63,7 +63,7 @@ const ManageCourses = () => {
         const confirm = window.confirm("Are you sure to delete: " + name);
         if (confirm) {
             setLoading(true);
-            fetch(`http://localhost:5000/courses/${id}`, {
+            fetch(`https://pro-tutors.herokuapp.com/courses/${id}`, {
                 method: "DELETE",
             })
                 .then((res) => res.json())

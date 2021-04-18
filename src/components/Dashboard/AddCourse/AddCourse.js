@@ -61,7 +61,7 @@ const AddCourse = () => {
                 coverPhotoLink,
             };
             console.log(newCourse);
-            fetch(`http://localhost:5000/addCourse`, {
+            fetch(`https://pro-tutors.herokuapp.com/addCourse`, {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

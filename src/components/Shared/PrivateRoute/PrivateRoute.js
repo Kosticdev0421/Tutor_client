@@ -8,7 +8,7 @@ const PrivateRoute = ({ children, ...rest }) => {
     console.log(currentUser);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/getUser`, {
+        fetch(`https://pro-tutors.herokuapp.com/getUser`, {
             headers: {
                 "content-type": "application/json",
                 "x-access-token": localStorage.getItem("ptToken"),

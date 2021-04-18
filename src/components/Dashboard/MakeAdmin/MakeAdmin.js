@@ -21,7 +21,7 @@ const MakeAdmin = () => {
             addedBy: currentUser.email,
         }
         console.log(newAdmin);
-        fetch(`http://localhost:5000/makeAdmin`, {
+        fetch(`https://pro-tutors.herokuapp.com/makeAdmin`, {
             method: "POST",
             headers: {
                 "content-type": 'application/json',

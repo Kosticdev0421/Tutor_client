@@ -14,7 +14,7 @@ const EnrollCourse = () => {
     
     useEffect(() => {
         if(courseId){
-            fetch(`http://localhost:5000/course/${courseId}`)
+            fetch(`https://pro-tutors.herokuapp.com/course/${courseId}`)
                 .then((res) => res.json())
                 .then((data) => setCourse(data));
         }
@@ -60,7 +60,7 @@ const EnrollCourse = () => {
             paymentId,
             enrollTime: new Date(),
         };
-        fetch(`http://localhost:5000/enrollCourse`, {
+        fetch(`https://pro-tutors.herokuapp.com/enrollCourse`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
