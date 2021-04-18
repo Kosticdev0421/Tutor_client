@@ -1,15 +1,23 @@
-.contact{
-    background-image: url(../../../images/appointmentBg.png);
+.contact-form{
+    width: 50%;
     position: relative;
     z-index: 1;
 }
-.contact::before{
-    position: absolute;
+/* 
+.contact-form::before{
     content: "";
-    top:0;
-    width: 100%;
-    height: 100%;
-    background: rgb(12, 11, 27);
-    opacity: .9;
+    height: 500px;
+    width: 30px;
+    position: absolute;
+    top: -20%;
+    left: 50%;
     z-index: -1;
+    background-color: yellow;
+    transform: rotateZ(45deg);
+} */
+
+@media (max-width: 768px) {
+    .contact-form{
+        width: 100%;
+    }
 }

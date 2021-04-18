@@ -17,3 +17,8 @@
     margin-bottom: 20px;
     color: #404083;
 }
+@media (max-width: 768px) {
+    .feature:nth-child(2n){
+        margin: 0;
+    }
+}

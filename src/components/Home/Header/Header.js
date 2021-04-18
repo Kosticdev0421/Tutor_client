@@ -1,8 +1,9 @@
 import React from 'react';
 import headerImg from '../../../images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg';
+import './Header.css';
 const Header = () => {
     return (
-        <div style={{ minHeight: "80vh" }}>
+        <div className="header">
             <div className="row w-75 m-auto mt-5 d-flex justify-content-center align-items-center">
                 <div className="col-md-6">
                     <h1>
@@ -13,7 +14,7 @@ const Header = () => {
                         attractive words here!
                     </p>
                     <a href="#courses">
-                        <button className="btn btn-brand">Enroll In A Course Now</button>
+                        <button className="btn btn-brand my-2">Enroll In A Course Now</button>
                     </a>
                 </div>
                 <div className="col-md-6">

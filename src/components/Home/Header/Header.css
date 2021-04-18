@@ -1,0 +1,9 @@
+.header{
+    min-height: 82vh;
+}
+
+@media (max-width: 768px) {
+    .header .row{
+        flex-direction: column-reverse;
+    }
+}

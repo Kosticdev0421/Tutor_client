@@ -10,7 +10,7 @@ const Sidebar = () => {
     const history = useHistory();
     return (
         <div className="col-md-2 sidebar">
-            <ul className="list-unstyled">
+            <ul className="list-unstyled sidebar-items">
                 <li>
                     <Link to="/" className="nav-link">
                         <FontAwesomeIcon icon={faHome} /> Home
@@ -48,7 +48,7 @@ const Sidebar = () => {
                         </li>
                         <li>
                             <Link
-                                to="/dashboard/enroll/607bf297691dc41d00530f58"
+                                to="/dashboard/enroll/"
                                 className="nav-link"
                             >
                                 <FontAwesomeIcon icon={faPlus} /> Enroll

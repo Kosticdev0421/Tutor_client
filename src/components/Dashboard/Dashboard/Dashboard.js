@@ -21,10 +21,10 @@ const Dashboard = () => {
                         <Route path="/dashboard/enrolled-courses">
                             <EnrolledCoursesList />
                         </Route>
-                        {/* <Route path="/dashboard/enroll">
+                        <Route exact path="/dashboard/enroll">
                             <EnrollCourse />
-                        </Route> */}
-                        <Route exact path="/dashboard/enroll/:courseId">
+                        </Route>
+                        <Route path="/dashboard/enroll/:courseId">
                             <EnrollCourse />
                         </Route>
                         <Route path="/dashboard/add-course">
