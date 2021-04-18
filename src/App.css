@@ -12,16 +12,16 @@
 .highlighted-text{
   display: inline;
   color: #404083;
-  padding: 5px 5px 0px;
-  background-position-y: 0%;
+  /* padding: 5px 5px 0px; */
+  background-position-y: -0%;
   background-image: linear-gradient( ghostwhite 40%, yellow 60%);
-  transition: background 500ms ease;
-  background-size: 2px;
+  transition: all 0.5s ease;
   background-size: auto 175%;
 }
 .highlighted-text:hover{
   background-position-y: 100%;
   background-image: linear-gradient( ghostwhite 50%, yellow 50%);
+  background-size: auto 200%;
 
 }
 

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import './Courses.css';
 const CourseCard = ({course}) => {
     return (
-        <div className="col-md-4">
-            <div className="shadow-lg p-5 m-2 course">
+        <div className="col-md-3">
+            <div className="shadow-lg p-3 m-2 course">
                 <img src={course.coverPhotoLink} alt="" className="img-fluid" />
                 <h2 className="highlighted-text">{course.name}</h2>
                 <h2>${course.price}</h2>

@@ -21,8 +21,8 @@ const ChooseCourse = () => {
                         <div className="col-md-4">
                             <div className="shadow-lg p-5 m-2 course">
                                 <img src={course.coverPhotoLink} alt="" className="img-fluid" />
-                                <h2 className="highlighted-text">{course.name}</h2>
-                                <h2>${course.price}</h2>
+                                <h4 className="highlighted-text">{course.name}</h4>
+                                <h3>${course.price}</h3>
                                 <p>{course.description}</p>
                                     <button className="btn btn-brand" onClick={() => {
                                         history.push(`/dashboard/enroll/${course._id}`)

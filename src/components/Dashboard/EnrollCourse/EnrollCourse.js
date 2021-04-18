@@ -18,7 +18,7 @@ const EnrollCourse = () => {
             .then((data) => setCourse(data));
     }, [])
     console.log(currentUser)
-    if(currentUser?.enrolledCourses?.indexOf(courseId) > -1){
+    if(currentUser.enrolledCourses?.indexOf(courseId) > -1){
         return (
             <div>
                 <h2 className="text-center my-5">
@@ -32,19 +32,23 @@ const EnrollCourse = () => {
     }
     return (
         <div>
-            <h2>Enroll</h2>
+            <h5>
+                Enroll in:
+            </h5>
+            <h3 className="text-brand">{course.name}</h3>
             <form action="">
                 <input type="text" placeholder="Name" readOnly value={currentUser.displayName} />
                 <input type="text" placeholder="Email" readOnly value={currentUser.email} />
-                <input type="text" placeholder="Course" readOnly value={course.name || "HSC MATH"} />
+                <input type="text" placeholder="Course" readOnly value={course.name} />
+                <input type="text" placeholder="Price" readOnly value={"$"+course.price} />
             </form>
             <h5 className="my-3">
                 Pay With <i>Credit Card</i>:
             </h5>
             <PaymentStripe handleEnroll={handleEnroll} />
-            <h4 className="m-3">
+            {/* <h4 className="m-3">
                 Only <strong>${course.price}</strong> for this course.
-            </h4>
+            </h4> */}
         </div>
     );
 

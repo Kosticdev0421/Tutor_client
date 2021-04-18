@@ -3,28 +3,6 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Testimonials.css';
 
-// import { default as aliza, default as ema, default as wilson } from '../../../images/wilson.png';
-// const testimonialData = [
-//     {
-//         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-//         name : 'Wilson Harry',
-//         from : 'California',
-//         img : wilson
-//     },
-//     {
-//         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-//         name : 'Ema Gomez',
-//         from : 'California',
-//         img : ema
-//     },
-//     {
-//         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-//         name : 'Aliza Farari',
-//         from : 'California',
-//         img : aliza
-//     }
-// ]
-
 const Testimonials = () => {
     const [testimonials, setTestimonials] = useState([]);
     useEffect(() => {
@@ -41,7 +19,7 @@ const Testimonials = () => {
                 showThumbs={false}
                 showStatus={false}
                 autoPlay={true}
-                interval={2000}
+                interval={3000}
             >
                 {testimonials && testimonials.map((testimonial) => (
                     <div>

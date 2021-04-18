@@ -1,5 +1,5 @@
 import { faBitbucket } from '@fortawesome/free-brands-svg-icons';
-import { faPlus, faSignOutAlt, faStar, faUserEdit, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faPlus, faSignOutAlt, faStar, faUser, faUserEdit, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
@@ -11,6 +11,11 @@ const Sidebar = () => {
     return (
         <div className="col-md-2 sidebar">
             <ul className="list-unstyled">
+                <li>
+                    <Link to="/" className="nav-link">
+                        <FontAwesomeIcon icon={faHome} /> Home
+                    </Link>
+                </li>
                 <li>
                     <Link to="/dashboard/enrolled-courses" className="nav-link">
                         <FontAwesomeIcon icon={faBitbucket} /> Enrolled Courses
@@ -43,7 +48,7 @@ const Sidebar = () => {
                         </li>
                         <li>
                             <Link
-                                to="/dashboard/enroll/607a588f69e0a20a643407fa"
+                                to="/dashboard/enroll/607bf297691dc41d00530f58"
                                 className="nav-link"
                             >
                                 <FontAwesomeIcon icon={faPlus} /> Enroll
@@ -51,9 +56,13 @@ const Sidebar = () => {
                         </li>
                     </li>
                 )}
+                <li className="nav-link mt-5 text-brand">
+                    <FontAwesomeIcon icon={faUser} />
+                    {currentUser.displayName}
+                </li>
                 <li>
                     <button
-                        className="btn mt-5 nav-link text-brand"
+                        className="btn nav-link text-brand"
                         onClick={() => {
                             localStorage.setItem("ptToken", "");
                             setCurrentUser("");

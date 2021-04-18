@@ -1,7 +1,7 @@
 import React from 'react';
 
-const UserCourseCard = ({course}) => {
-    const {coverPhotoLink, name, description} = course.course;
+const UserCourseCard = ({ enrolledCourse }) => {
+    const { coverPhotoLink, name, description, status } = enrolledCourse.course;
     return (
         <div className="col-md-4 shadow-sm">
             <div className="row">
@@ -14,7 +14,9 @@ const UserCourseCard = ({course}) => {
                     />
                 </div>
                 <div className="col-md-4">
-                    <button className="btn btn-warning">Status</button>
+                    <button className={`btn btn-${status === "Finished" ? "success" : "warning"}`}>
+                        {status}
+                    </button>
                 </div>
             </div>
             <div>

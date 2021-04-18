@@ -7,7 +7,6 @@ const PaymentForm = ({ handleEnroll }) => {
     const [paymentError, setPaymentError] = useState("");
 
     const handleSubmit = async (event) => {
-        // Block native form submission.
         event.preventDefault();
 
         if (!stripe || !elements) {
@@ -31,7 +30,7 @@ const PaymentForm = ({ handleEnroll }) => {
         <form onSubmit={handleSubmit}>
             <CardElement />
             <button type="submit" disabled={!stripe} className="btn btn-brand my-3">
-                Pay
+                Enroll!
             </button>
             {paymentError && <p style={{ color: "red" }}>{paymentError}</p>}
         </form>
