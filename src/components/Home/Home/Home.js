@@ -5,6 +5,7 @@ import Contact from '../Contact/Contact';
 import Courses from '../Courses/Courses';
 import Features from '../Features/Features';
 import Header from '../Header/Header';
+import NotesDisplay from '../NotesDisplay/NotesDisplay';
 import Testimonials from '../Testimonials/Testimonials';
 import './Home.css';
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Nav />
             <Header />
             <Features />
+            <NotesDisplay />
             <Courses />
             <Testimonials />
             <Contact />

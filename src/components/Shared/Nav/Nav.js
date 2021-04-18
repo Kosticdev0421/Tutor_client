@@ -31,17 +31,17 @@ const Nav = () => {
                                 </Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
+                                <a class="nav-link active" aria-current="page" href="#features">
                                     Features
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
+                                <a class="nav-link active" aria-current="page" href="#courses">
                                     Courses
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
+                                <a class="nav-link active" aria-current="page" href="#contact">
                                     Contact
                                 </a>
                             </li>

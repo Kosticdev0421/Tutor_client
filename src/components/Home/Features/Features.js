@@ -27,7 +27,7 @@ const Features = () => {
         
     ]
     return (
-        <div>
+        <div id="features">
         <h1 className="text-center text-brand mb-5">Why we are special</h1>
             <div className="row">
                 {
