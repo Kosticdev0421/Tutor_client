@@ -9,4 +9,11 @@ Become pro of your studies with our planet's best teaching system!
 - Focus on Basics
 - Pay online through credit card
 
+## Tools
+- REACT
+- EXPRESSJS
+- MONGODB
+- STRIPE PAYMENT GATEWAY
+- FIREBASE
+
 [Live view](https://pro-tutors.netlify.app/)
